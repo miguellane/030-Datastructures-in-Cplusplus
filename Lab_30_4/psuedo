@@ -1,0 +1,110 @@
+			combineString
+main()
+	"Enter string"
+	string data <- cin
+	"Enter times"
+	if(wrong runs)"Error"
+	int runs <- cin
+	concatenate = string combineStr(data, runs)
+	"Resulting string "concatenate" ."
+mainend
+combineStr(string data, int runs)
+	string concatenate
+	for( i < runs)
+		concatenate += data
+	forend
+	return concatenate
+combineStrend
+--------------------------------------------------------------------------------------------------------------------------------
+			sortArray1
+main()
+	"Enter size"
+	int size <- cin
+	if(wrong size)"Error"
+	"Enter array"
+	int data[] <- cin
+	"Sort ascend(0) or descend(1)"
+	int descend <- cin
+	if(wrong descent)"Error"
+
+	sortArr(ascend, size, data[]);
+mainend
+sortArr(int descend, int size ,int[] data)
+	if(descend == 1)
+		int max
+		int swap = 0
+		for(j = size -1; j>0; j--)
+			max = -9999
+			int loc
+			for(each array[i] until i=j)
+				if(array[i] > max)
+					max <- array[i]
+					loc <- i
+				ifend
+			forend
+			if(array[j] != max)
+				array[loc] <- array[j]
+				array[j] <- max
+				swap ++
+			ifend
+		forend
+	ifend
+	else
+		int min
+		int swap = 0
+		for(j = size -1; j>0; j--)
+			min = 9999
+			int loc
+			for(each array[i] until i=j)
+				if(array[i] < min)
+					min <- array[i]
+					loc <- i
+				ifend
+			forend
+			if(array[j] != min)
+				array[loc] <- array[j]
+				array[j] <- min
+				swap ++
+			ifend
+		forend
+	elseend	
+sortArrend
+5 4 6 8 2 5
+--------------------------------------------------------------------------------------------------------------------------------
+			sortArray2
+main()
+	"Enter size"
+	int size <- cin
+	if(wrong size)"Error"
+	"Enter array"
+	int data[] <- cin
+	"Sort ascend(0) or descend(1)"
+	int descend <- cin
+	if(wrong descent)"Error"
+
+	sortArr(ascend, size, data[]);
+mainend
+sortArr(int descend, int size ,int[] data)
+	if(descend == 1)
+		for(i = size - 2; i >= 0; i--)
+			int save = A[i];
+			int j = i
+			while(j<size-1 && A[j+1] < saved)
+				A[j+1] = A[j]
+				j++;
+			whileend
+			A[j] = saved;
+		forend
+	ifend
+	else
+		for(i = 1; i < size; i++)
+			int save = A[i];
+			int j = i
+			while(j>0 && A[j-1] > saved)
+				A[j] = A[j-1]
+				j--;
+			whileend
+			A[j] = saved;
+		forend
+	elseend	
+sortArrend

@@ -1,0 +1,23 @@
+structure Time{
+		int hours, minutes, seconds;
+};
+
+int getTimeFromUser(&object){
+	"Enter times";
+	Split(:,line << cin);
+	if(line == wrong format)
+		return 0; "Error";
+	if(HH == Real)	object.hours = HH;
+	if(MM == Real)	object.minutes = MM;
+	if(SS == Real)	object.seconds = SS;
+	return 1;
+}
+void print24Hour(object){
+	Fill 0 for 2 of each:
+	""object.hours""object.minutes""object.seconds;
+}
+int main(){
+	Time history;
+	getTimeFromUser(history);
+	print24Hour(history);
+}

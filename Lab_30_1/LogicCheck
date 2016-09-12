@@ -1,0 +1,4 @@
+1) mv main cselab
+2) It creates an a.out file.
+3) By establishing variables as std::cout and std::endl.
+

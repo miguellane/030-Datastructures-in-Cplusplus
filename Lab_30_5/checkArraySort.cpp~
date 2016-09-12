@@ -1,0 +1,35 @@
+#ifndef cust_checkArraySort
+#define cust_checkArraySort
+int checkArraySort(int arr[], int arrMax, int first, int last) ;
+#endif 
+int checkArraySort(int arr[], int arrMax, int first, int last){
+	if(last >= arrMax){
+		cout <<"You are trying to check an invalid range of array elements!"<<endl;
+		return -20;
+	}
+	else if(first > last){
+		cout <<"You are trying to check an invalid range of array elements!"<<endl;
+		return -10;
+	}
+	int inc = 1;
+	int dec = 1;
+	for(int i = first +1; i < last; i++){
+		if(arr[i] >= arr[i-1])
+			dec = 0;
+		if(arr[i] <= arr[i-1])
+			inc = 0;
+	}
+	if(dec == 1){
+		cout <<"The portion of the array is sorted in descending order!"<<endl;
+		return -1;
+	}
+	else if(inc == 1){
+		cout <<"The portion of the array is sorted in ascending order!"<<endl;
+		return 1;
+	}
+	else{
+		cout <<"The portion of the array is not sorted!"<<endl;
+		return 0;	
+	}
+}
+

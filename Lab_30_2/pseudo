@@ -1,0 +1,51 @@
+1 -------------------------------------------------------------------------------------------
+main(){
+	"Enter size."
+	int size
+	size <- cin
+	if(size < 1) Error
+	else
+		pass = pass
+		for (each of array[size])
+			scan each number into array[i]
+			if (number is less than previous in array)
+				pass = fail
+		if (pass = pass)	"Increasing"
+		else (pass = fail) "Not increasing"
+		for (each of array[size])
+			print array[i]
+}
+2 -------------------------------------------------------------------------------------------main(){
+	"Enter the string"
+	string data;
+	data <- cin 
+	"The reverse of the string is: "
+	string reverse = string(rfunction)
+	cout<<reverse<<endl
+}
+2 ------------------------------------------------------------------------------------------
+main(){
+	"Enter the size of a 2D array: "
+	int size
+	size <- cin
+	if(size < 1)
+		"ERROR"
+	else if(size > 10)
+		"Error"
+	else{
+		int data[size][size]
+		int neg = 0
+		for(each row of data[size]){
+			"Enter values"
+			for(each column of data[^][size]){
+				scan each number into array[i][j]
+				if(data value is negative)
+					neg++;
+		}	}
+		if(neg == 0)
+			"No negative"
+		else
+			"There are" neg "negatives."
+	}
+
+}

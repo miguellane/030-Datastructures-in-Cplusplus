@@ -1,0 +1,57 @@
+structure Time{
+		int hours, minutes, seconds;
+};
+int getTimeFromUser(&object){
+	"Enter times";
+	HH,MM,SS = spit(:,cin);
+	if(line == wrong format)
+		return 0; "Error";
+	if(HH == Real)	object.hours = HH;
+	if(MM == Real)	object.minutes = MM;
+	if(SS == Real)	object.seconds = SS;
+	return 1;
+}
+void print24Hour(object){
+	Fill 0 for 2 of each:
+	"HH:MM:SS";
+}
+int main(){
+	Time history;
+	getTimeFromUser(history);
+	print24Hour(history);
+}
+-----------------------------------------------------------------------------------------------structure Time{
+		int hours, minutes, seconds;
+};
+int getTimeFromUser(&object){
+	"Enter times";
+	HH,MM,SS = spit(:,cin);
+	if(line == wrong format)
+		return 0; "Error";
+	if(HH == Real)	object.hours = HH;
+	if(MM == Real)	object.minutes = MM;
+	if(SS == Real)	object.seconds = SS;
+	return 1;
+}
+void print24Hour(object){
+	Fill 0 for 2 of each:
+	"HH:MM:SS";
+}
+structure Course{
+	define name,credits,majorRequirement,avgGrade,days,startTime,endTime;
+
+};
+int main(){
+	readfile("txt");
+	int num = cin1
+	Course class[num];
+	for(0  to num-1){
+		class[i].name = cin2
+		class[i].credits = cin3
+		class[i].majorRequirement = cin4
+		class[i].avgGrade = cin5
+		class[i].days = cin6
+		class[i].startTime = cin7
+		class[i].endTime = cin8
+	}
+}
